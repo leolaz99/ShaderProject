@@ -18,7 +18,11 @@
 		_DetailTex1 ("Detail Texture 1", 2D) = "gray" {}
 		_DetailTex2 ("Detail Texture 2", 2D) = "gray" {} 
 		_DetailTex3 ("Detail Texture 3", 2D) = "gray" {} 
-		_DetailTex4 ("Detail Texture 4", 2D) = "gray" {} 
+		_DetailTex4 ("Detail Texture 4", 2D) = "gray" {}
+		_DetailTex5 ("Detail Texture 5", 2D) = "gray" {}
+		_DetailTex6 ("Detail Texture 6", 2D) = "gray" {} 
+		_DetailTex7 ("Detail Texture 7", 2D) = "gray" {} 
+		_DetailTex8 ("Detail Texture 8", 2D) = "gray" {} 
 	}
 
 	SubShader 
@@ -36,8 +40,9 @@
 
 			sampler2D _MainTex;
 
-			sampler2D _DetailTex1, _DetailTex2, _DetailTex3, _DetailTex4;
-			float4 _DetailTex1_ST, _DetailTex2_ST, _DetailTex3_ST, _DetailTex4_ST;
+			Texture2D    _DetailTex1, _DetailTex2,_DetailTex3, _DetailTex4, _DetailTex5,_DetailTex6, _DetailTex7, _DetailTex8;
+			float4       _DetailTex1_ST, _DetailTex2_ST,_DetailTex3_ST, _DetailTex4_ST,_DetailTex5_ST, _DetailTex6_ST, _DetailTex7_ST, _DetailTex8_ST;
+			SamplerState sampler_DetailTex1;
 
 			float4 _MainTex_ST;
 			float4 _Offset;
@@ -85,14 +90,14 @@
 				float4 splat = tex2D(_MainTex, i.uvSplat);
 			
 				return	
-						tex2D(_Texture1, i.uv) * splat.r * tex2D(_DetailTex1, i.uvDetail) +
-						tex2D(_Texture2, i.uv) * splat.g * tex2D(_DetailTex2, i.uvDetail) +
-						tex2D(_Texture3, i.uv) * splat.b * tex2D(_DetailTex3, i.uvDetail)+
-						tex2D(_Texture4, i.uv) * (1 - splat.r - splat.g - splat.b) * tex2D(_DetailTex4, i.uvDetail) +
-						tex2D(_Texture5, i.uv) * splat.r * tex2D(_DetailTex1, i.uvDetail) +
-						tex2D(_Texture6, i.uv) * splat.g * tex2D(_DetailTex2, i.uvDetail) +
-						tex2D(_Texture7, i.uv) * splat.b * tex2D(_DetailTex3, i.uvDetail) +
-						tex2D(_Texture8, i.uv) * (1 - splat.r - splat.g - splat.b) * tex2D(_DetailTex4, i.uvDetail);
+						tex2D(_Texture1, i.uv) * splat.r * _DetailTex1.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture2, i.uv) * splat.g * _DetailTex2.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture3, i.uv) * splat.b * _DetailTex3.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture4, i.uv) * (1 - splat.r - splat.g - splat.b) * _DetailTex4.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture5, i.uv) * splat.r * _DetailTex5.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture6, i.uv) * splat.g * _DetailTex6.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture7, i.uv) * splat.b * _DetailTex7.Sample(sampler_DetailTex1, i.uv) +
+						tex2D(_Texture8, i.uv) * (1 - splat.r - splat.g - splat.b) * _DetailTex8.Sample(sampler_DetailTex1, i.uv);
 			}
 			
 			
