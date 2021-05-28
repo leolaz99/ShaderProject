@@ -50,7 +50,7 @@
 			#define FORWARD_BASE_PASS
 			
 			#include "UnityCG.cginc"
-			#include "Light2.cginc"
+			#include "Light.cginc"
 			
 			ENDCG
 		}
@@ -79,7 +79,7 @@
 			#pragma shader_feature duplication
 
 			#include "UnityCG.cginc"
-			#include "Light2.cginc"
+			#include "Light.cginc"
 			
 
 			ENDCG
