@@ -110,79 +110,91 @@
 				return float4(mul(m, vertex.xz), vertex.yw).xzyw;
 			}
 			
+
 			[maxvertexcount(12)]
             void geom(triangle v2g input[3], inout TriangleStream<g2f> tristream) 
 			{				
                 g2f o;
-			
-				input[0].position = RotateAroundYInDegrees(input[0].position, _Degrees);
-				o.worldPos = UnityObjectToClipPos (input[0].position);
-                o.uv = input[0].uv;
-				o.uvSplat = input[0].uvSplat;
-				o.uvDetail = input[0].uvDetail;	
-                tristream.Append(o);
-			
-				input[1].position = RotateAroundYInDegrees(input[1].position, _Degrees);
-				o.worldPos = UnityObjectToClipPos (input[1].position);
-                o.uv = input[1].uv;
-				o.uvSplat = input[1].uvSplat;
-				o.uvDetail = input[1].uvDetail;
-                tristream.Append(o);
-			
-				input[2].position = RotateAroundYInDegrees(input[2].position, _Degrees);
-				o.worldPos = UnityObjectToClipPos (input[2].position);
-                o.uv = input[2].uv;
-				o.uvSplat = input[2].uvSplat;
-				o.uvDetail = input[2].uvDetail;
-                tristream.Append(o);	
-
-                tristream.RestartStrip();
 				
-				#ifdef duplication
-				input[0].position = RotateAroundYInDegrees(input[0].position, _Degrees);
-                o.worldPos = UnityObjectToClipPos(input[0].position + _Offset);
-                o.uv = input[0].uv;
-				o.uvSplat = input[0].uvSplat;
-				o.uvDetail = input[0].uvDetail;
-                tristream.Append(o);
-			
-				input[1].position = RotateAroundYInDegrees(input[1].position, _Degrees);
-                o.worldPos = UnityObjectToClipPos(input[1].position + _Offset);
-                o.uv = input[1].uv;
-				o.uvSplat = input[1].uvSplat;
-				o.uvDetail = input[1].uvDetail;
-                tristream.Append(o);
-			
-				input[2].position = RotateAroundYInDegrees(input[2].position, _Degrees);
-                o.worldPos = UnityObjectToClipPos(input[2].position + _Offset);
-                o.uv = input[2].uv;
-				o.uvSplat = input[2].uvSplat;
-				o.uvDetail = input[2].uvDetail;
-                tristream.Append(o);
-			
-                tristream.RestartStrip();
-			
-				input[0].position = RotateAroundYInDegrees(input[0].position, _Degrees);
-                o.worldPos = UnityObjectToClipPos(input[0].position - _Offset);
-                o.uv = input[0].uv;
-				o.uvSplat = input[0].uvSplat;
-				o.uvDetail = input[0].uvDetail;
-                tristream.Append(o);
-			
-				input[1].position = RotateAroundYInDegrees(input[1].position, _Degrees);
-                o.worldPos = UnityObjectToClipPos(input[1].position - _Offset);
-                o.uv = input[1].uv;
-				o.uvSplat = input[1].uvSplat;
-				o.uvDetail = input[1].uvDetail;
-                tristream.Append(o);
-			
-				input[2].position = RotateAroundYInDegrees(input[2].position, _Degrees);
-                o.worldPos = UnityObjectToClipPos(input[2].position - _Offset);
-                o.uv = input[2].uv;
-				o.uvSplat = input[2].uvSplat;
-				o.uvDetail = input[2].uvDetail;
-                tristream.Append(o);
-				#endif		
+				for(int i = 0; i < 3; i++)
+				{
+					tristream.RestartStrip();
+					input[0].position = RotateAroundYInDegrees(input[0].position, _Degrees);
+					if(i == 0)
+					{
+						o.worldPos = UnityObjectToClipPos (input[0].position);
+					}
+
+					#ifdef duplication
+					if(i == 1)
+					{
+						o.worldPos = UnityObjectToClipPos (input[0].position  + _Offset);
+					}
+
+					if(i == 2)
+					{
+						o.worldPos = UnityObjectToClipPos (input[0].position  - _Offset);
+					}
+					#endif
+						
+					o.uv = input[0].uv;
+					o.uvSplat = input[0].uvSplat;
+					o.uvDetail = input[0].uvDetail;	
+				
+					tristream.Append(o);
+
+					/*--------------------------------------------------------------------------*/
+
+					input[1].position = RotateAroundYInDegrees(input[1].position, _Degrees);
+					if(i == 0)
+					{
+						o.worldPos = UnityObjectToClipPos (input[1].position);
+					}
+
+					#ifdef duplication
+					if(i == 1)
+					{
+						o.worldPos = UnityObjectToClipPos (input[1].position  + _Offset);
+					}
+
+					if(i == 2)
+					{
+						o.worldPos = UnityObjectToClipPos (input[1].position  - _Offset);
+					}
+					#endif
+						
+					o.uv = input[1].uv;
+					o.uvSplat = input[1].uvSplat;
+					o.uvDetail = input[1].uvDetail;	
+				
+					tristream.Append(o);
+
+					/*--------------------------------------------------------------------------*/
+
+					input[2].position = RotateAroundYInDegrees(input[2].position, _Degrees);
+					if(i == 0)
+					{
+						o.worldPos = UnityObjectToClipPos (input[2].position);
+					}
+
+					#ifdef duplication
+					if(i == 1)
+					{
+						o.worldPos = UnityObjectToClipPos (input[2].position  + _Offset);
+					}
+
+					if(i == 2)
+					{
+						o.worldPos = UnityObjectToClipPos (input[2].position  - _Offset);
+					}
+					#endif
+						
+					o.uv = input[2].uv;
+					o.uvSplat = input[2].uvSplat;
+					o.uvDetail = input[2].uvDetail;	
+				
+					tristream.Append(o);
+				}			
             }
 			ENDCG
 		}
