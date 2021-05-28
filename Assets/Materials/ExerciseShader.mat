@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: ExerciseShader
   m_Shader: {fileID: 4800000, guid: 3dc77bb3f76f68d4ab2a919a418da969, type: 3}
   m_ShaderKeywords: duplication
   m_LightmapFlags: 4
