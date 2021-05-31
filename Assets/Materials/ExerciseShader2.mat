@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
