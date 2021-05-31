@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ExerciseShader
   m_Shader: {fileID: 4800000, guid: 3dc77bb3f76f68d4ab2a919a418da969, type: 3}
-  m_ShaderKeywords: duplication
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -36,35 +36,35 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap1:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap2:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap3:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap4:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap5:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap6:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap7:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap8:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex1:
@@ -72,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex2:
-        m_Texture: {fileID: 2800000, guid: 06075f6c2145cdc45b08663a21da680c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex3:
@@ -88,7 +88,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex6:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 06075f6c2145cdc45b08663a21da680c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex7:
@@ -96,7 +96,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex8:
-        m_Texture: {fileID: 2800000, guid: 2a105fcda1913654887847f447ebe468, type: 3}
+        m_Texture: {fileID: 2800000, guid: 06075f6c2145cdc45b08663a21da680c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -112,35 +112,35 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap1:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap15:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap2:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap3:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap4:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap6:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap7:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap8:
-        m_Texture: {fileID: 2800000, guid: 4d2d5cb0a2023074c9ead6758cd6fce3, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd01e2709b3d47d44b910f86c8c767d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -208,15 +208,15 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.5
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Smoothness: 1
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _ToggleDuplication: 1
+    - _ToggleDuplication: 0
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
